@@ -1,5 +1,9 @@
 # Changelog
 
+## 11.7.0 - 2024-06-13
+* [#1415](https://github.com/stripe/stripe-ruby/pull/1415) Deprecate StripeClient#request
+  * Add deprecation warning for `StripeClient#request`. This helper method will be removed in a future major version. To access response objects, use the `last_response` property on the returned resource instead. Refer to [Accessing a response object](https://github.com/stripe/stripe-ruby?tab=readme-ov-file#accessing-a-response-object) in the README for usage details.
+
 ## 11.7.0-beta.1 - 2024-05-30
 * [#1400](https://github.com/stripe/stripe-ruby/pull/1400) Update generated code for beta
   * Keeping up with the changes from version 11.6.0
